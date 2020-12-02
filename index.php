@@ -21,40 +21,26 @@
 <!--- Two Column Section -->
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-12 col-lg-6">
+		<div class="col-md-4 col-lg-4">
 			<h2>Fight No. ---</h2>
 			<!-- MERON CARD -->
-			<!-- <div class="col-md-12-col-md-6"> -->z
+			<!-- <div class="col-md-12-col-md-6"> -->
 				<div class="card" id ="merondiv">
 					<!-- <div class="card-body"> -->
 						<!-- <div class="container-fluid padding"> -->
 							<div class="row padding">
 								<div class="col-md-6">
 									<h1 class="display-3 card-title lead">MERON</h1>
+									<h1 class="display-3 card-title lead">ODDS</h1>
 								</div>	
 								<!-- BET COUNT -->
-								<div class="col-md-6">
-									   
-								<h1 id= "count" class="display-3 card-title lead">    
-											<script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-											// $('#count').prepend("-");
-											</script>
-											<script type ="text/javascript">
-												$(document).ready(function() {
-													setInterval(function() {                           
-														$('#count').load('./ajax/betCount.php')
-				
-													},3000);
-												});
-											</script>
-								</h1>
-								</div>
-								<div class="col-md-6">
-										<h1 class="display-3 card-title lead">ODDS</h1>
-								</div>
+							
+								<!-- <div class="col-md-6">
+										
+								</div> -->
 								<!-- ODDS COUNT -->
 								<div class="col-md-6">
-								<h1 id= "oddsMeron" class="display-3 card-title lead">    
+								<h1 id= "oddsMeron" class="display-1 lead">    
 											<script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 											// $('#count').prepend("-");
 											</script>
@@ -82,30 +68,13 @@
 								<div class="row">
 									<div class="col-md-6">
 										<h1 class="display-3 card-title lead">WALA</h1>
+										<h1 class="display-3 card-title lead">ODDS</h1>
 									</div>	
 									<!-- BET COUNT -->
-									<div class="col-md-6">
-									<h1 id= "countwala" class="display-3 card-title lead">    
-											<script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-											// $('#count').prepend("-");
-											</script>
-											<script type ="text/javascript">
-												$(document).ready(function() {
-													setInterval(function() {                           
-														$('#countwala').load('./ajax/betCountWala.php')
-														console.log('hit');
-													},3000);
-												});
-											</script>
-								</h1>
-									</div>
-	
-									<div class="col-md-6">
-											<h1 class="display-3 card-title lead">ODDS</h1>
-									</div>
+									
 									<!-- ODDS COUNT -->
 									<div class="col-md-6">
-									<h1 id= "oddsWala" class="display-3 card-title lead">    
+									<h1 id= "oddsWala" class="display-1 card-title lead">    
 											<script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 											// $('#count').prepend("-");
 											</script>
@@ -117,7 +86,7 @@
 													},3000);
 												});
 											</script>
-								</h1>
+									</h1>
 									</div>
 								</div>
 					</div>
@@ -155,8 +124,8 @@
 
 		<!-- second column -->
 
-		<div class="col-lg-6"> 
-			<img src="img/sampling.jpg" class="img-fluid" >
+		<div class="col-md-8 col-lg-8"> 
+			<img src="img/sampling.jpg" style="width:100% height:50%" class="img-fluid" >
 
 		</div>
 

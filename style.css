@@ -30,7 +30,7 @@ html, body {
 }
 
 #merondiv {
-  background: #CD5C5C;
+  background: #b60505;
   color: white;
 }
 
@@ -38,6 +38,14 @@ html, body {
   background: navy;
   color: white;
 }
+
+#oddsMeron {
+padding-top: 20px;
+}
+
+#oddsWala {
+  padding-top: 20px;
+  }
 
 
 #announcement {
