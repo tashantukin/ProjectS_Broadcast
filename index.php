@@ -95,39 +95,38 @@
 				
 					<h1 class="display-3 card-title">PREVIOUS FIGHTS:</h1>
 					</div>	
-					<!-- PREVIOUS FIGHTS CARDS -->
+
+							<!-- PREVIOUS FIGHTS CARDS -->
 					<div class="row">
+					<?php
+							include("./db.php");
+							$sql = "SELECT FightNo, FightWinner,TotalBetCount,TotalBetAmount, TotalWinner, TotalWinningAmount, TotalClaimed, TotalUnclaimed FROM tblFight where Status != 1 order by FightID desc limit 3";
+							$resultset = mysqli_query($conn, $sql);// or die("database error:". mysqli_error($conn));  
+							while( $record = mysqli_fetch_assoc($resultset)) { ?>
 						<div class="col-lg-4">									
 							<div class="card" id="announcement">
-									<h1 class="">FIGHT #</h1> 
-									<h2 class="">FIGHT #</h2>
+									<h1 class=""><?php echo  $record['FightNo'] ?></h1> 
+									<h2 class=""><?php echo  $record['FightWinner'] ?></h2>
 							</div>
 						</div>
-						<div class="col-lg-4">									
-							<div class="card" id="announcement">
-									<h1 class="">FIGHT #</h1>
-									<h2 class="">FIGHT #</h2>	
-							</div>
-						</div>	
-						<div class="col-lg-4">									
-							<div class="card" id="announcement">
-									<h1 class="">FIGHT #</h1>
-									<h2 class="">FIGHT #</h2>
-							</div>
-						</div>	
+							
+							<?php } ?>
 					</div>
 						<!-- 						
 						<div class="card" id="announcement">
 							<h1 class="display-4 card-title">ANNOUNCEMENT:</h1>
 						</div>				 -->
-					</div>
+					</div>							
 
-		<!-- second column -->
-
-		<div class="col-md-8 col-lg-8"> 
+<div class="col-md-8 col-lg-8"> 
 			<img src="img/sampling.jpg" style="width:100% height:50%" class="img-fluid" >
 
 		</div>
+			</div><!--/.col-->
+
+		<!-- second column -->
+
+		
 
 		<div class="col-md-12 col-lg-12"> 
 				<marquee behavior="scroll" direction="left" class="display-3 card-title">Your scrolling text goes here</marquee>
